@@ -6,7 +6,7 @@ import play from '../../../assets/Play.png'
 const Banner = () => {
     return (
         <div>
-            <div className='flex container items-center mx-auto gap-15 my-21.25'>
+            <div className='flex container justify-center items-center mx-auto gap-15 my-21.25'>
                 <div className='banner-content'>
                     <div className="w-[50%] rounded-full px-4! py-2! bg-[#E1E7FF] font-bold flex items-center ">
                         <img src={dotCircle} alt="" />
