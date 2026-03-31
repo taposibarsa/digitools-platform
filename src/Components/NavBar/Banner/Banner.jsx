@@ -19,7 +19,7 @@ const Banner = () => {
                     </p>
                     <div className='flex gap-4 mt-8'>
                         <button className='px-4 py-3 text-white font-bold rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA]'>Explore Products</button>
-                        <button className='flex gap-2 items-center text-[16px] font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent border-[#9243fa] border-2 rounded-full px-4 py-3 '> <img src={play} alt="" />  Watch Demo</button>
+                        <button className='flex gap-2 items-center text-[16px] font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent border-[#9243fa] border-2 rounded-full px-4 py-3  '> <img src={play}     alt="" />  Watch Demo</button>
                     </div>
 
                 </div>
