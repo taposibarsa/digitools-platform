@@ -1,4 +1,4 @@
-const CartView = ({ cartItems, onRemove }) => {
+const CartView = ({ cartItems, onRemove , onCheckout}) => {
     if (cartItems.length === 0) {
         return (
             <div className="text-center py-20 text-gray-400">
@@ -37,7 +37,9 @@ const CartView = ({ cartItems, onRemove }) => {
                     <p className="text-xl font-bold text-[#101727]"> ${total}</p>
                 </div>
                 
-                <button className="w-full mt-4 px-8 py-3 rounded-full text-white font-semibold bg-linear-to-r from-[#4F39F6] to-[#9514FA] hover:opacity-90 transition">
+                <button
+                onClick={onCheckout}
+                className="w-full mt-4 px-8 py-3 rounded-full text-white font-semibold bg-linear-to-r from-[#4F39F6] to-[#9514FA] hover:opacity-90 transition">
                     Checkout
                 </button>
             </div>

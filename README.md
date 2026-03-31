@@ -1,16 +1,42 @@
-# React + Vite
+🚀 Project Name: DigiTools Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DigiTools is a modern digital tools marketplace landing page built using React.
+The project showcases premium digital products, templates, and productivity tools through a clean and responsive SaaS-style user interface.
 
-Currently, two official plugins are available:
+This project focuses on modern UI design, reusable components, and responsive frontend development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+✨ Project Overview
 
-## React Compiler
+The goal of this project is to create a modern digital tools platform where users can:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Explore digital products
+View premium tools in an organized layout
+Understand pricing clearly
+Experience a smooth and modern user interface
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🧩 Features
+NavBar
+Modern Hero Section
+Statistics Counter Section (Users, Tools, Rating)
+Product Cards Layout
+Responsive Grid System
+Get Started Steps Section
+Pricing Section
+Professional Footer
+Fully Responsive Design
+Clean & Minimal UI
+
+🔄 Main Section & Toggling
+Design 2 buttons at the center of the section.
+By clicking Cart, the cart section will be shown. By default it will show an empty message.
+By Clicking Product, the Products section will be shown.
+By Default product section will be visible.
+
+
+🛠️ Technologies Used
+React.js
+Tailwind CSS, DaisyUI
+JavaScript (ES6+)
+React-Toastify (NPM Package)
+JSON (for product data)
