@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
+import { toast } from "react-toastify";
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, onAddToCart }) => {
     const { name, price, billing, badge, description, features, image } = product;
+
+    const [added, setAdded] = useState(false);
+
     const badgeStyles = {
         "Best Seller": "bg-yellow-100 text-yellow-700",
         "Popular": "bg-purple-100 text-purple-700",
         "New": "bg-green-100 text-green-700"
+    };
+
+    const handleAddToCart = () => {
+        onAddToCart(product);
+        setAdded(true);
+        // Alert
+        toast("Added to cart Successfully! 🛒")
+
+        // ৩ সেকেন্ড পর আবার "Buy Now" এ ফিরে যাবে
+        
     };
 
     return (
@@ -54,10 +68,25 @@ const ProductCard = ({ product }) => {
             </ul>
 
             {/* Button */}
-            <button className="mt-auto w-full py-3 rounded-full text-white font-semibold
-      bg-linear-to-r from-[#4F39F6] to-[#9514FA]
-      hover:opacity-90 transition">
-                Buy Now
+            <button
+                onClick={handleAddToCart}
+                disabled={added}
+                className={`mt-auto w-full py-3 rounded-full font-semibold transition-all duration-500 flex items-center justify-center gap-2
+                    ${added
+                        ? 'bg-green-500 text-white cursor-not-allowed'
+                        : 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white hover:opacity-90'
+                    }`}
+            >
+                {added ? (
+                    <>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                        Added to Cart
+                    </>
+                ) : (
+                    'Buy Now'
+                )}
             </button>
         </div>
     );

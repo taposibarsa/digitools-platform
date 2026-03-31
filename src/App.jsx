@@ -1,5 +1,6 @@
 import { Suspense } from 'react'
 import './App.css'
+ import { ToastContainer, toast } from 'react-toastify';
 import Counter from './Components/Counter/Counter'
 import GetStarted from './Components/GetStarted/GetStarted'
 import Banner from './Components/NavBar/Banner/Banner'
@@ -28,6 +29,8 @@ function App() {
     <GetStarted></GetStarted>
     <TransparentPricing></TransparentPricing>
     <ReadyToTransform></ReadyToTransform>
+
+    <ToastContainer />
 
     </>
   )
