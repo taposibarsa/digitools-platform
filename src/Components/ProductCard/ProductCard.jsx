@@ -17,8 +17,6 @@ const ProductCard = ({ product, onAddToCart }) => {
         setAdded(true);
         // Alert
         toast("Added to cart Successfully! 🛒")
-
-        // ৩ সেকেন্ড পর আবার "Buy Now" এ ফিরে যাবে
         
     };
 

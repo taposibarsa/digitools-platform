@@ -1,3 +1,5 @@
+import React from 'react';
+
 const CartView = ({ cartItems, onRemove , onCheckout}) => {
     if (cartItems.length === 0) {
         return (
